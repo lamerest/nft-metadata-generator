@@ -1,15 +1,16 @@
 let fs = require('fs');
 let csv = require('jquery-csv');
-let sample = './build/bears.csv';
+let sample = './files/bears.csv';
 let bearsArray
 
-fs.readFileSync(sample, 'UTF-8', function (err, csvString) {
+fs.readFile(sample, 'UTF-8', function (err, csvString) {
     if (err) { 
         console.log(err); 
     }
-    console.log("In process");
+
     bearsArray = JSON.stringify(csv.toObjects(csvString));
-    fs.writeFile("./build/bears-JSON.js", bearsArray, err => {
+
+    fs.writeFile("./files/bears-JSON.json", bearsArray, err => {
         if (err) {
             console.log(err);
         } else {

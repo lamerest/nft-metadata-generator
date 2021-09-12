@@ -1,9 +1,9 @@
 const fs = require('fs')
 
-fs.readFile('./package.json', 'utf8', (err, jsonString) => {
+fs.readFile('./files/bears-JSON.json', 'utf8', (err, jsonString) => {
     if (err) {
         console.log("File read failed:", err)
         return
     }
-    console.log('File data:', jsonString) 
+    let bears  = JSON.parse(jsonString)) 
 })
