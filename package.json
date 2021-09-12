@@ -1,0 +1,26 @@
+{
+  "name": "metadata-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/reader.js",
+    "generate": "node build/generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamerest/metadata-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lamerest/metadata-generator/issues"
+  },
+  "homepage": "https://github.com/lamerest/metadata-generator#readme",
+  "dependencies": {
+    "jquery-csv": "^1.0.21",
+    "js-ipfs": "^0.0.301"
+  }
+}
